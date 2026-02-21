@@ -20,6 +20,13 @@
 
     }
 
+    console.log("esercizio 1")
+    console.log(`somma dei numeri pari è: ${sommaPari(numeri)}`)
+}
 
-    console.log(sommaPari(numeri))
+{
+    console.log("esercizio 2")
+
+
+
 }
