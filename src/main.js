@@ -44,8 +44,12 @@
     function contaOccorrenze(array, valore) {
 
         let accumulator = 0
-        array.forEach(element => element.includes(valore) {
-            counter = accumulator + 1
+        array.forEach(element => {
+            if (element.includes(valore)) {
+                const counter = accumulator + 1
+                return counter
+            }
+
         });
 
         return accumulator
