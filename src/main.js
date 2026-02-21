@@ -4,6 +4,8 @@
 
     // Dati di esempio:
 
+    const display = document.getElementById("sommaPari")
+
     const numeri = [1, 2, 5, 8, 3, 4, 10];
 
     function sommaPari(array) {
@@ -21,11 +23,30 @@
     }
 
     console.log("esercizio 1")
-    console.log(`somma dei numeri pari è: ${sommaPari(numeri)}`)
+    const risultato = console.log(`somma dei numeri pari è: ${sommaPari(numeri)}`)
+
+    display.innerText = `somma dei numeri pari è: ${sommaPari(numeri)}`
 }
 
 {
     console.log("esercizio 2")
+
+    /*
+    2. Conta le occorrenze
+  Crea una funzione contaOccorrenze(array, valore) che conta quante volte compare un valore specifico all’interno di un array.
+
+  Dati di esempio:
+   */
+
+    const frutti = ["mela", "pera", "mela", "banana", "mela"];
+    const valore = "mela";
+
+    function contaOccorrenze(array, valore) {
+
+        const occorrenze = array.includes(valore)
+
+
+    }
 
 
 
