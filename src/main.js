@@ -23,9 +23,9 @@
     }
 
     console.log("esercizio 1")
-    const risultato = console.log(`somma dei numeri pari è: ${sommaPari(numeri)}`)
+    console.log(`La somma dei numeri pari è: ${sommaPari(numeri)}`)
 
-    display.innerText = `somma dei numeri pari è: ${sommaPari(numeri)}`
+    display.innerText = `La somma dei numeri pari è: ${sommaPari(numeri)}`
 }
 
 {
@@ -46,8 +46,8 @@
         let accumulator = 0
         array.forEach(element => {
             if (element.includes(valore)) {
-                const counter = accumulator + 1
-                return counter
+                accumulator + 1
+
             }
 
         });
