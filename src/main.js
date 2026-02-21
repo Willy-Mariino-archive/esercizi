@@ -1,24 +1,21 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+{
+    // 1) Somma dei numeri pari
+    // Scrivi una funzione sommaPari(array) che, dato un array di numeri, calcoli la somma di tutti i numeri pari presenti.
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
+    // Dati di esempio:
 
-setupCounter(document.querySelector('#counter'))
+    const numeri = [1, 2, 5, 8, 3, 4, 10];
+
+    function sommaPari(array) {
+
+        for (let i = 0; i = array.length; i++) {
+            if (i % 2 === 0) {
+                const sumPari = array.reduce((acc, curr) => acc + curr, 0)
+                return sumPari
+            }
+        }
+    }
+
+    sommaPari(numeri)
+    console.log(sommaPari)
+}
