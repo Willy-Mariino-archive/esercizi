@@ -8,7 +8,7 @@
 
     function sommaPari(array) {
 
-        for (let i = 0; i < array.length; i++) {
+        for (let i = 0; i <= array.length; i++) {
             if (i % 2 === 0) {
                 const sumPari = array.reduce((acc, curr) => acc + curr, 0)
                 return sumPari
@@ -16,6 +16,6 @@
         }
     }
 
-    sommaPari(numeri)
-    console.log(sommaPari)
+
+    console.log(sommaPari(numeri))
 }
