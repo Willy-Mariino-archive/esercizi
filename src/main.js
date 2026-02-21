@@ -38,6 +38,9 @@
   Dati di esempio:
    */
 
+    const display = document.getElementById("contaValore")
+
+
     const frutti = ["mela", "pera", "mela", "banana", "mela"];
     const valore = "mela";
 
@@ -46,7 +49,7 @@
         let accumulator = 0
         array.forEach(element => {
             if (element.includes(valore)) {
-                accumulator + 1
+                accumulator += 1
 
             }
 
@@ -57,5 +60,7 @@
     }
 
     console.log(contaOccorrenze(frutti, valore))
+
+    display.innerText = `Il conteggio dei valori è: ${contaOccorrenze(frutti, valore)}`
 
 }
