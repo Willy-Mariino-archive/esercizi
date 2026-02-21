@@ -43,11 +43,15 @@
 
     function contaOccorrenze(array, valore) {
 
-        const occorrenze = array.includes(valore)
+        let accumulator = 0
+        array.forEach(element => element.includes(valore) {
+            counter = accumulator + 1
+        });
 
+        return accumulator
 
     }
 
-
+    console.log(contaOccorrenze(frutti, valore))
 
 }
