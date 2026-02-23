@@ -64,3 +64,42 @@
     display.innerText = `Il conteggio dei valori è: ${contaOccorrenze(frutti, valore)}`
 
 }
+
+{
+
+    console.log("esercizio 3")
+
+
+    /*
+    
+    3. Inverti un array
+    Scrivi una funzione invertiArray(array) che, senza usare metodi già pronti come reverse(), restituisca un nuovo array con gli elementi in ordine inverso.
+    
+    Dati di esempio:
+
+    regola generale 
+
+    Vai in avanti → i < length
+    Vai indietro → i >= 0
+
+    Perché in entrambi i casi stai includendo solo indici validi.
+
+    
+    */
+
+    const numeri = [10, 20, 30, 40, 50];
+
+    function invertiArray(array) {
+
+        let accumulator = 0
+
+        for (let i = array.length - 1; i >= 0; i--) {
+            accumulator += array[i]
+        }
+        return accumulator
+    }
+
+    console.log(invertiArray(numeri))
+
+
+}
