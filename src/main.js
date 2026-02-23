@@ -91,7 +91,7 @@
 
     function invertiArray(array) {
 
-        let accumulator = 0
+        let accumulator = []
 
         for (let i = array.length - 1; i >= 0; i--) {
             accumulator += array[i]
